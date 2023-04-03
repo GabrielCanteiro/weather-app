@@ -14,9 +14,10 @@
 }
 
 .not_found{
-    background-image: url(../../assets/img/not_found.gif);
+    background-image: url(../../assets/img/not_found_data.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .content_container{
@@ -26,6 +27,14 @@
     max-width: 90%;
     margin: 1.5rem auto;
 }
+
+img{
+    background-color: rgba(182, 182, 182, 0.791);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+}
+
+
 #temp{
     font-size: 4rem;
 }
@@ -35,7 +44,6 @@
     align-items: center;
     justify-content: space-between;
 
-    background-color: #5ac0d94b;
     height: 1.7rem;
     border-radius: .4rem;
 
@@ -66,5 +74,12 @@
     width: 100%;
     text-align: right;
     margin-top: 24vh ;
+}
+.error{
+    text-align: center;
+    margin-top: 60vh;
+}
+.error h1{
+    color: #007dff;
 }
 

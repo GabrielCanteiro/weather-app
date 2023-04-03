@@ -18,7 +18,7 @@ const Card = () => {
     <div className={`container gif ${background}`}>
       <Local setWeather={setWeather}/>
       <div>
-        {weather.main &&(
+        {weather.main ?(
           <div className='content_container'>
             <h1 id='temp'>{weather.main.temp.toFixed(0)}º</h1>
             <div id='weather_description'>
@@ -44,6 +44,11 @@ const Card = () => {
                 <p>Wind Speed</p>
               </div>
             </div>
+          </div>
+        ):(
+          <div className="error">
+            <h1>No Results Found</h1>
+            <p>Try searching again</p>
           </div>
         )}
       </div>
